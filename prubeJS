@@ -1,0 +1,15 @@
+1
+A. Una variable es un contenedor que guarda en el un dato. Sirve para almacenar valores e informacion que querramos utilizar dentro de un programa para calculos matematicos o agregar informacion para mas adelante.
+B. Al declarar la variable solo la estamos creando, pero dentro de la misma no existe nigngun dato almacenado. Al inicializar una variable le estamos otorgando un valor para que almacene
+C.Los numeros representan una cantidad, su suma indica incremento de la cantidad de algun elemento. El concatenar strings refiere a unificar texto que no esta relacionado entre si.
+D. La suma y la concatenacion se realiza con el operador "+"
+
+2
+a- string
+b- string
+c- string
+d- int
+e- string
+f- int
+g- int
+h- int
