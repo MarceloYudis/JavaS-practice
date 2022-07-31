@@ -13,3 +13,92 @@ e- string
 f- int
 g- int
 h- int
+
+FUNCIONES
+1
+Una funcion es un algoritmo que seactiva y ejecuta con codigo solo cuando es invocado
+B) Sirve cuando necesitas realizar una tarea o proceso varias veces a lo largo de un
+proyecto
+C)los parametros son las variables que seran utilizadas dentro de la funcion. Los argumentos
+son los valores que le proporcionamos a la funcion al momento de invocarla.
+
+2
+const namemsito = "Juan David";
+const lastname = "Castro Gallego";
+const nickname = "juandc";
+
+function impresionDeNombre(theName, theLastName, theNick) {
+	let completeName = theName + theLastName;
+	console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + theNick + ".");
+};
+
+impresionDeNombre(namemsito,lastname,nickname);
+
+CONDICIONALES
+1
+A- Una condicional es un bloque de codigo que se ejecuta en funcion a si un argumento es verdadero o falso 
+B- Existe if, if else y switch
+C- Si si es posible combinar las funciones y condicionales
+
+2
+const tipoDeSubscripcion = "Basic";
+
+if (tipoDeSubscripcion == "Free") {
+	console.log("Solo puedes tomar los cursos gratis");
+} else {
+	if (tipoDeSubscripcion == "Basic" )  {
+		console.log("Puedes tomar casi todos los cursos de Platzi durante un mes")
+	} else {
+		if (tipoDeSubscripcion == "Expert") {
+			console.log("Puedes tomar casi todos los cursos de Platzi durante un año")
+		} else {
+			console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año")
+		}
+	}
+};
+
+if (tipoDeSubscripcion == "Free" ) {
+	console.log("Solo puedes tomar los cursos gratis");
+}if (tipoDeSubscripcion == "Basic"  ) {
+	console.log("Puedes tomar casi todos los cursos de Platzi durante un mes")
+}if (tipoDeSubscripcion == "Expert" ) {
+	console.log("Puedes tomar casi todos los cursos de Platzi durante un año")
+}if (tipoDeSubscripcion == "ExpertPlus" ) {
+	console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año")
+};
+
+CILCOS
+1
+a) Un ciclo es un bloque de codigo que se repite siempre y cuando se cumpla con la condicion asignada a dicho bloque
+b) Hay el ciclo while, for
+c) Es cuando el bloque de codigo termina ejecutandose sin parar porque la condicion asignada nunca se ve modificada. Es un problema porque puede colgar un computador o ralentizarlo de forma permanente a menos que se pare el programa.A
+d) Si, si es posible mezclar ciclos con condicionales
+
+2
+let i= 0;
+while (i < 5 ) {
+	console.log("El valor de i es: " + i);
+	i++
+};
+
+let i = 10
+while(i >= 2) {
+	console.log("El valor de i es: " + i);
+	i--;
+}
+
+3
+let datoDelUsuario;
+
+function preguntarUsuario () {
+	/*datoDelUsuario = prompt("Cuanto es 2 + 2"); */
+	if(datoDelUsuario != 4) {
+		datoDelUsuario = prompt("Cuanto es 2 + 2");
+
+		preguntarUsuario();
+
+	} else {
+		
+	};
+}
+preguntarUsuario()
