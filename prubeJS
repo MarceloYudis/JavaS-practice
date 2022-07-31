@@ -102,3 +102,42 @@ function preguntarUsuario () {
 	};
 }
 preguntarUsuario()
+
+LISTAS
+1
+a- Un array es un valor que guarda dentro suyo mas valores o variables.
+b- Un objeto es un contenedor de datos anclados a un elemento
+c- Es mejor un array en los casos donde uno debe modificar los datos que guarda en dicho valor o para acceder a todos los datos.
+d- Si, si se pueden mezclar
+
+2
+let coloresElegidos = [];
+
+for(i=0 ; i <= 5; ++i) {
+	let infoDelUsuario = prompt("Que colores te gustan");
+
+	coloresElegidos.push(infoDelUsuario);
+
+};
+console.log(coloresElegidos[0]);
+
+3
+let coloresElegidos = [];
+
+for(i=0 ; i <= 5; ++i) {
+	let infoDelUsuario = prompt("Que colores te gustan");
+
+	coloresElegidos.push(infoDelUsuario);
+
+};
+function ImpresionAbsoluta() {
+	let longitudColores = coloresElegidos.length;
+
+	for(i=0; i < longitudColores; i++) {
+		console.log(coloresElegidos[i]);
+	}
+};
+
+ImpresionAbsoluta();
+
+4
