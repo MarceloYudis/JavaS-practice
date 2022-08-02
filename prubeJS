@@ -141,3 +141,25 @@ function ImpresionAbsoluta() {
 ImpresionAbsoluta();
 
 4
+let reservAnimal;
+
+function animales(nombre, patas, tamannio) {
+	this.nombre = nombre;
+	this.patas = patas;
+	this.tamannio = tamannio;
+
+}
+
+	let nambreAnimal = prompt("Dime un animal");
+	let susPatas = prompt("Cuantas patas tiene");
+	let elTamannio = prompt("Es chico, mediano o grande");
+
+	reservAnimal = new animales(nambreAnimal, susPatas, elTamannio)
+
+alert("Gracias por pasarte!");
+
+	alert(reservAnimal.nombre);
+	alert(reservAnimal.patas);
+	alert(reservAnimal.tamannio);
+
+	alert(reservAnimal.nombre + " " + reservAnimal.patas + " " + reservAnimal.tamannio);
