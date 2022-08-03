@@ -31,3 +31,21 @@ let areaTriang = (trianguloBase * trianguloH)/2;
 console.log("El area del triangulo es de: " + areaTriang + "cm");
 
 console.groupEnd();
+
+//Calculo del circulo
+console.group();
+let circuloRadio = 10;
+let circuloDiam = circuloRadio * 2;
+
+let valorPI = Math.PI;
+
+console.log("El radio del circulo es de: " + circuloRadio);
+console.log("El diametro es de: " + circuloDiam);
+
+let circuloCIRC = valorPI * circuloDiam;
+let circuloArea = valorPI * circuloRadio * circuloRadio;
+
+console.log("La circuferencia es de: " + circuloCIRC);
+console.log("El area del circulo es de: " + circuloArea);
+
+console.groupEnd();
