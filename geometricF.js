@@ -33,30 +33,40 @@ function perimetroTriang (trianguloLado,trianguloLado2,trianguloBase) {
 
 perimetroTriang(1, 2, 3);
 
-function areaTriang() {
+function areaTriang(trianguloBase, trianguloH) {
 
     return (trianguloBase * trianguloH)/2;
 
 }
 
-console.log("El area del triangulo es de: " + areaTriang + "cm");
+areaTriang(4, 5);
+
+console.log();
 
 console.groupEnd();
 
 //Calculo del circulo
 console.group();
-let circuloRadio = 10;
-let circuloDiam = circuloRadio * 2;
 
-let valorPI = Math.PI;
 
-console.log("El radio del circulo es de: " + circuloRadio);
-console.log("El diametro es de: " + circuloDiam);
 
-let circuloCIRC = valorPI * circuloDiam;
-let circuloArea = valorPI * circuloRadio * circuloRadio;
 
-console.log("La circuferencia es de: " + circuloCIRC);
-console.log("El area del circulo es de: " + circuloArea);
+
+function circuloCIRC(circuloRadio) {
+    let circuloDiam = circuloRadio * 2;
+    let valorPI = Math.PI;
+
+    return valorPI * circuloDiam;
+}
+
+circuloCIRC(30);
+
+function circuloArea(circuloRadio) {
+    let valorPI = Math.PI;
+    return valorPI * circuloRadio * circuloRadio;
+} 
+
+console.log("La circuferencia es de: "  );
+console.log("El area del circulo es de: " + circuloArea(9));
 
 console.groupEnd();
