@@ -4,11 +4,20 @@ console.log("HORA DEL CAFE");
 let cuadradoLado = 9;
 console.log( "Cada lado del cuadrado mide: " + cuadradoLado + " mts")
 
-let perimetroCu = cuadradoLado * 4;
+function perimetroCu(cuadradoLadito) { return cuadradoLadito * 4;
+
+}
+
+perimetroCu();
 
 console.log("El perimetro es de un total de: " + perimetroCu + " mts");
 
-let areaCu = cuadradoLado * cuadradoLado;
+function areaCu(cuadradoLadito) {
+ 
+    return    cuadradoLadito * cuadradoLadito;
+};
+
+areaCu();
 
 console.log("Su area es de: "+ areaCu +" mts cuadrados")
 console.groupEnd();
@@ -16,17 +25,19 @@ console.groupEnd();
 
 // Espacio del triangulo
 console.group()
-let trianguloLado = 6;
-let trianguloLado2 = 6;
-let trianguloBase = 4;
-let trianguloH = 7;
 
-console.log("Los lados del triangulo valen: " + trianguloLado + "cm, " + trianguloLado2 + "cm, " +
-trianguloBase + "cm. ")
+function perimetroTriang (trianguloLado,trianguloLado2,trianguloBase) {
 
-let perimetroTriang = trianguloLado + trianguloLado2 + trianguloBase;
+    return trianguloLado + trianguloLado2 + trianguloBase
+} 
 
-let areaTriang = (trianguloBase * trianguloH)/2;
+perimetroTriang(1, 2, 3);
+
+function areaTriang() {
+
+    return (trianguloBase * trianguloH)/2;
+
+}
 
 console.log("El area del triangulo es de: " + areaTriang + "cm");
 
