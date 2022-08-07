@@ -104,3 +104,17 @@ function calcularCirculoPerim() {
 }
 
 //SECCION TRIANGULO ISOCOLES
+
+function IsocelesPerimetro() {
+    const ladoA = document.getElementById("unoIsoceles");
+    const ladoB = document.getElementById("dosIsoceles");
+    const ladoC = document.getElementById("tresIsoceles");
+
+    const lado1 = ladoA.value;
+    const lado2 = ladoB.value;
+    const lado3 = ladoC.value;
+
+    if() {
+
+    }
+}
