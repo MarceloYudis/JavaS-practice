@@ -7,7 +7,56 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Figuras geometricas</h1>
+   
+    <header> <h1>Practicando javascript :D</h1>
+        
+    </header>
+    <main>
+        <section>
+            <form>
+                <label for="valorDelUsuario"> Escriba el valor del lado de un cuadrado</label>
+                <input id="valorDelUsuario" type="number" >   
+                <button type="button" onclick="calculoCuadrado()">Aceptar</button>
+            </form>
+        </section>
+        <section>
+            <form>
+                <h3>Ponga el valor de los lados de su triangulo</h3> 
+                <p>
+                   
+                    <label for="trianguloInput_uno">Lado uno</label>
+                    <input id="trianguloInput_uno" type="number"> 
+                   
+                </p>
+                <p>
+                    
+                        <label for="trianguloInput_dos">Lado uno</label>
+                        <input id="trianguloInput_dos" type="number"> 
+                    
+                </p>
+                <p>
+                    
+                        <label for="trianguloInput_tres">Lado tres</label>
+                    <input id="trianguloInput_tres" type="number"> 
+                  
+                </p>
+ 
+                <button type="button" onclick="calcularTrianguloPerim()">Aceptar</button>
+            </form>
+        </section>
+        <section>
+            <form>
+                <h4>
+                    Escriba el valor del radio de su circulo
+                </h4>
+                <p>
+                    <label for="circuloRadio">Radio</label>
+                    <input id="circuloRadio" type="number">
+                </p>
+                <button type="button" onclick="calcularCirculoPerim()">Aceptar</button>
+            </form>
+        </section>
+    </main>
 
     <script src="./geometricF.js"></script>
 </body>
