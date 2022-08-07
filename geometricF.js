@@ -102,3 +102,5 @@ function calcularCirculoPerim() {
     const perimetro = circuloCIRC(radioNumero);
     alert(perimetro)
 }
+
+//SECCION TRIANGULO ISOCOLES
