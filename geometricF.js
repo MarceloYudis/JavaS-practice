@@ -114,19 +114,23 @@ function IsocelesPerimetro() {
     const lado2 = ladoB.value;
     const lado3 = ladoC.value;
 
-    const alturaTriangular = 0;
+    let alturaTriangular;
 
 
     if(lado1 != lado2 && lado1 == lado3) {
         alturaTriangular = Math.sqrt((lado1 * lado3) - ((lado2 * lado2) / 4));
+        console.log(alturaTriangular)
 
+        alert(alturaTriangular)
 
     } else if(lado2 != lado1 && lado2 == lado3 ) {
         alturaTriangular = Math.sqrt((lado2 * lado3) - ((lado1 * lado1) / 4));
+        console.log(alturaTriangular)
 
+        alert(alturaTriangular)
 
     } else {
             alert("No coinciden los lados con los de un triangulo isoceles");
     }
-    alert(alturaTriangular)
+    
 }
