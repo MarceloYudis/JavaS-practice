@@ -10,6 +10,19 @@ function calcularDescuentos(precio, descuento) {
 }
 
 
-calcularDescuentos(preciOriginal, descuento)
 
 
+function extraccionDeInputs() {
+    const precio = document.getElementById("IngresoPrecio");
+    const desc = document.getElementById("DescuentoIngresado");
+
+    const precioVALOR = precio.value;
+    const descVALOR = desc.value;
+
+    let datosDeDescuento = calcularDescuentos(precioVALOR, descVALOR) ;
+ 
+    
+    let escrituraDeRespuesta = document.getElementById("resultadoDelDescuento");
+    escrituraDeRespuesta.innerText = "El precio del articulo con el descuento es de: $" + datosDeDescuento;
+
+}

@@ -18,18 +18,22 @@
                 <form >
                     <p>
                         <label for="IngresoPrecio">Escriba el precio  del producto</label>
-                        <input id="IngresoPrecio" type="text">
+                        <input id="IngresoPrecio" type="number">
 
                     </p>
 
                    <p>
                     
                         <label for="DescuentoIngresado">Ingrese el descuento del producto</label>
-                        <input id="DescuentoIngresado">
+                        <input id="DescuentoIngresado" type="number">
                     
                    </p>
 
-                    <button type="button">Aceptar</button>
+                    <button type="button" onclick="extraccionDeInputs()">Aceptar</button>
+
+                    <p id="resultadoDelDescuento">
+
+                    </p>
                 </form>
             
         </main>
