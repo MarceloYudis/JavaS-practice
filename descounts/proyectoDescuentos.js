@@ -26,3 +26,17 @@ function extraccionDeInputs() {
     escrituraDeRespuesta.innerText = "El precio del articulo con el descuento es de: $" + datosDeDescuento;
 
 }
+
+function extraccionDeCupones() {
+    const precioProducto = document.getElementById("IngresoPrecio");
+    const infoCupon = document.getElementById("CuponesDeDescuento");
+    let productoValor = precioProducto.value;
+    let cuponsito = parseInt(infoCupon);
+
+    const precioFinal = calcularDescuentos(productoValor, cuponsito);
+
+    console.log(precioFinal);
+
+
+
+}
