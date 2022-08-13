@@ -24,13 +24,18 @@
 
                    <p>
                     
-                        <label for="DescuentoIngresado">Ingrese el descuento del producto</label>
-                        <input id="DescuentoIngresado" type="number">
+                        
+                        <select name="cupones" id="CuponesDeDescuento">
+                            <option value="15">Cupon de 15%</option>
+                            <option value="20">Cupon de 20%</option>
+                            <option value="25">Cupon de 25%</option>
+                            <option value="40">Cupon de 40%</option>
+                        </select>
                     
                    </p>
 
                     <button type="button" onclick="extraccionDeInputs()">Aceptar</button>
-
+                    <button type="button" onclick="extraccionDeCupones()">Aplicar Cupon</button>
                     <p id="resultadoDelDescuento">
 
                     </p>
