@@ -31,12 +31,17 @@ function extraccionDeCupones() {
     const precioProducto = document.getElementById("IngresoPrecio");
     const infoCupon = document.getElementById("CuponesDeDescuento");
     let productoValor = precioProducto.value;
-    let cuponsito = parseInt(infoCupon);
+    let cuponsito = infoCupon.value;
+    cuponsito = parseInt(cuponsito);
+
+    console.log(productoValor)
+    console.log(cuponsito)
 
     const precioFinal = calcularDescuentos(productoValor, cuponsito);
 
     console.log(precioFinal);
 
-
+    const escribiRespuesta = document.getElementById("resultadoDelDescuento");
+    escribiRespuesta.innerText = "El precio del producto aplicando el cupon del 15% es de $" + precioFinal;
 
 }
