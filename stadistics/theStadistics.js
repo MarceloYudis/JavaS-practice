@@ -10,17 +10,25 @@ function creacionDeLalista(listita, datoInsertado) {
 
 function calculoMediaAritmetica(listadoDeDatos) {
     
-    console.log("lista de datos " + listadoDeDatos)
+    // console.log("lista de datos " + listadoDeDatos)
 
-    let sumaLista;
+    //let sumaLista = 0;
 
-    for(let i = 0; i < listadoDeDatos.length; i++) {
-        sumaLista = sumaLista + listadoDeDatos[i];
-        console.log(sumaLista);
-    };
+    // for(let i = 0; i < listadoDeDatos.length; i++) {
+       // sumaLista = sumaLista + listadoDeDatos[i];
+       // console.log(sumaLista);
+
+    //};
+
+    const sumaLista = listadoDeDatos.reduce(
+        function(valorAcumulado = 0, valorAnniadido) {
+            return valorAcumulado + valorAnniadido;
+        }
+    );
 
     console.log("suma de la lista " + sumaLista);
     const promedioLista = sumaLista / listadoDeDatos.length;
+    return promedioLista
 }
 
 
@@ -29,4 +37,4 @@ creacionDeLalista(listaCreada, 1);
 creacionDeLalista(listaCreada, 2);
 creacionDeLalista(listaCreada, 3);
 
-calculoMediaAritmetica(listaCreada)
+calculoMediaAritmetica(listaCreada);
