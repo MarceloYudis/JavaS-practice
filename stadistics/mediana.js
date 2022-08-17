@@ -5,10 +5,10 @@ const listita = [
     1000000,
     8000,
     7,
-    90
+    
 ];
 
-const mitadListita = listita.length / 2;
+const mitadListita = parseInt(listita.length / 2);
 
 function detectarPar(listita) {
 
@@ -23,10 +23,18 @@ function detectarPar(listita) {
 function calculoMediana() {
     const deteccionPar = detectarPar(listita);
     if(deteccionPar) {
+        const primerDato = listita[mitadListita]
+        const segundoDato = listita[mitadListita - 1]
+
+        const sumaPromedio = (primerDato + segundoDato) / 2;
+
+        console.log("Mediana par igual a = " + sumaPromedio); 
 
     } else {
         mediana = listita[parseInt(mitadListita)];
         console.log(mediana);
     }
+
+
 }
 calculoMediana(listita);
