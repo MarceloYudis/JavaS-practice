@@ -1,11 +1,13 @@
-let listita = 0;
+let listita = [];
 
 function padreDeLasListas(listarda) {
     
+    console.log("LISTA DEL PADRE " + listarda);
+
     for(i = 0; i < listarda.length; i++) {
         listita.push(listarda[i]);
 
-    }
+    };
 
     console.log("NACIMIENTO DE LA LISTA " + listita);
 };
@@ -13,10 +15,15 @@ function padreDeLasListas(listarda) {
 
 console.log("lista completa sin ordenacion " + listita);
 
+for(i = 0; i < listita.length; i++) {
+    listita.sort( ordenadorDeListas(listita[i], listita[i + 1]))
 
-listita.sort(function ordenadorDeListas(a, b) {
+}
+
+function ordenadorDeListas(a, b) {
+    console.log("A = " + a + ",B = " + b);
     return a - b;
-});
+}
 
 console.log("LISTITA ORDENADA " + listita);
 
@@ -51,4 +58,5 @@ function calculoMediana() {
 
 
 }
+padreDeLasListas([1, 10, 3, 9999, 1000, 33, 27, 56, 100]);
 calculoMediana(listita);
