@@ -1,12 +1,15 @@
-const listita = [
-    900,
-    1000,
-    1100,
-    1000000,
-    8000,
-    7,
+let listita = 0;
+
+function padreDeLasListas(listarda) {
     
-];
+    for(i = 0; i < listarda.length; i++) {
+        listita.push(listarda[i]);
+
+    }
+
+    console.log("NACIMIENTO DE LA LISTA " + listita);
+};
+
 
 console.log("lista completa sin ordenacion " + listita);
 
@@ -28,6 +31,8 @@ function detectarPar(listita) {
         return false;
     }
 }
+
+
 
 function calculoMediana() {
     const deteccionPar = detectarPar(listita);
