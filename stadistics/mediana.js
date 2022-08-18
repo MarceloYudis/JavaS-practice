@@ -8,6 +8,15 @@ const listita = [
     
 ];
 
+console.log("lista completa sin ordenacion " + listita);
+
+
+listita.sort(function ordenadorDeListas(a, b) {
+    return a - b;
+});
+
+console.log("LISTITA ORDENADA " + listita);
+
 const mitadListita = parseInt(listita.length / 2);
 
 function detectarPar(listita) {
