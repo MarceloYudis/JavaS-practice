@@ -10,20 +10,30 @@ function padreDeLasListas(listarda) {
     };
 
     console.log("NACIMIENTO DE LA LISTA " + listita);
+    
+    encargadoDeOrdenar(listita);
+
+    console.log("LISTA YA ORDENADA!!! " + listita)
 };
 
+function encargadoDeOrdenar(listita) {
+
+    console.log("la lista de valores " + listita);
+    listita.sort( ordenadorDeListas );
+
+
+    return listita;
+  
+}
 
 console.log("lista completa sin ordenacion " + listita);
 
-for(i = 0; i < listita.length; i++) {
-    listita.sort( ordenadorDeListas(listita[i], listita[i + 1]))
 
-}
 
 function ordenadorDeListas(a, b) {
     console.log("A = " + a + ",B = " + b);
     return a - b;
-}
+}   
 
 console.log("LISTITA ORDENADA " + listita);
 
@@ -53,7 +63,7 @@ function calculoMediana() {
 
     } else {
         mediana = listita[parseInt(mitadListita)];
-        console.log(mediana);
+        
     }
 
 
