@@ -33,4 +33,18 @@ function medianaSalario(lista)  {
     }
 };
 
-console.log("listarda " + medianaSalario(listaOrdenada));
+const medianaGeneral = medianaSalario(listaOrdenada);
+
+
+const tajadaInicio = (listaOrdenada.length * 90) / 100;
+
+const tajadaConteo = listaOrdenada.length - tajadaInicio;
+
+
+const salariosTOP10 = listaOrdenada.splice(tajadaInicio, tajadaConteo);
+
+console.log("TOP 10 SALARIOS " + salariosTOP10);
+
+
+console.log("MEDIANA DEL TOP 10 " + medianaSalario(salariosTOP10));
+
