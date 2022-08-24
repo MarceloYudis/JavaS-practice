@@ -1,17 +1,38 @@
-const montoInicial = 0;
-const periodoDeTiempo = 0;
-const porcentajeUsuario = 0;
+let montoInicial = 0;
+let periodoDeTiempo = 0;
+let porcentajeUsuario = 0;
+let tasaInteres = 0;
 
-//Calculo de la tasa de interes
-const tasaInteres = porcentajeUsuario / 100;
+
 
 //Interes copmuesto al finalizar el periodo de resguardo
- const capitalFinal = Math.pow(montoInicial * (1 + tasaInteres), periodoDeTiempo );
+function calculoInteresCompuestoFinal(montoInicial, tasaInteres, periodoDeTiempo) {
+    const capitalFinal = Math.pow(montoInicial * (1 + periodoDeTiempo), tasaInteres );
+
+
+    return parseInt(capitalFinal);
+}
 
 //Interes compuesto durante cada año
-
+let lapsoDeTiempo = 1;
 for(i = 0; i < lapsoDeTiempo; i++) {
     
     let elCapital = montoInicial * (1 + tasaInteres) ** i;
     console.log(elCapital);
+}
+
+function obtencionDatosUsuario() {
+    montoInicial = document.getElementById("montoUsuario");
+    periodoDeTiempo = document.getElementById("tiempoUsuario")
+    porcentajeUsuario = document.getElementById("interesUsuario");
+
+    const montoInicialVALOR = montoInicial.value; 
+    const periodoDeTiempoVALOR = periodoDeTiempo.value;
+    const porcentajeUsuarioVALOR = porcentajeUsuario.value;
+
+    console.log(porcentajeUsuarioVALOR)
+    tasaInteres = porcentajeUsuarioVALOR / 100;
+
+    const gananciaCompuesta = calculoInteresCompuestoFinal(montoInicialVALOR, periodoDeTiempoVALOR, tasaInteres);
+    console.log(gananciaCompuesta);
 }

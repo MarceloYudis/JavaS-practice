@@ -13,16 +13,16 @@
 
             <form>
                 <p>
-                    <label>Escriba el monto que desea depositar</label>
-                    <input type="number"></p>
+                    <label for="montoUsuario">Escriba el monto que desea depositar</label>
+                    <input id="montoUsuario" type="number"></p>
                 <p>
-                    <label>Escriba por cuanto tiempo lo tendrà resguardado</label>
-                    <input type="number"></p>
+                    <label for="tiempoUsuario">Escriba por cuanto tiempo lo tendrà resguardado</label>
+                    <input id="tiempoUsuario" type="number"></p>
                 <p>
-                    <label>Escriba la tasa de interes que desee</label>
-                    <input type="number"></p>
+                    <label for="interesUsuario">Escriba la tasa de interes que desee</label>
+                    <input id="interesUsuario" type="number"></p>
 
-                <button type="button">Aceptar</button>
+                <button type="button" onclick="obtencionDatosUsuario()">Aceptar</button>
             </form>
 
         </main>
